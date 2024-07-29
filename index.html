@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="menubox">
+      <div class="menu">
+        <div class="top">
+          <h1>MENU</h1>
+          <i class="menu-close ri-close-line head-btn"></i>
+        </div>
+        <div class="mid">
+          <a href="">HOME</a>
+          <a href="">SERVICES</a>
+          <a href="">BOOKINGS</a>
+          <a href="">CONTACT US</a>
+          <a href="">ABOUT</a>
+        </div>
+        <div class="bottom">
+          <h1>Wander<span>Way</span></h1>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <main>
+        <img class="mainimg" src="./assets/footer-img.jpg" />
+        <img class="cloud" src="./assets/footer-clouds.png" />
+        <div class="overlay">
+          <nav>
+            <div class="nav-left">
+              <h1>Wander<span>Way</span></h1>
+            </div>
+            <div class="nav-right">
+              <p>Menu</p>
+              <i class="menu-open ri-menu-line"></i>
+            </div>
+          </nav>
+          <div class="heading">
+            <div class="heading-cont">
+              <h1>
+                Where Your <br />
+                Journey Begins!
+              </h1>
+              <p>
+                We bring you tailored travel experiences <br />
+                that cater to your adventurous spirit..
+              </p>
+              <div>
+                <a class="head-btn" href="">Start Your Journey</a>
+                <a class="head-btn" href="">Join Our Community</a>
+              </div>
+            </div>
+          </div>
+          <div class="image-anim">
+            <img class="car" src="./assets/Car.webp" />
+            <img class="cabin" src="./assets/Cabin.webp" />
+          </div>
+        </div>
+      </main>
+      <section class="category">
+        <h1>Popular <span>Categories</span></h1>
+        <p>
+          Much destinations here but don't be confuse! <br />
+          It's already grouped by category..
+        </p>
+        <button
+          class="carousel-arrow carousel-arrow--prev"
+          onclick="handleCarouselMove(false)"
+        >
+          <i class="ri-arrow-left-wide-line"></i>
+        </button>
+        <button
+          class="carousel-arrow carousel-arrow--next"
+          onclick="handleCarouselMove()"
+        >
+          <i class="ri-arrow-right-wide-line"></i>
+        </button>
+        <div class="carousel-cont">
+          <div class="carousel-slide">
+            <img src="./assets/beach.jpg" />
+            <p>Beaches</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/temple.jpg" />
+            <p>Temples</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/desert.jpg" />
+            <p>Deserts</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/mountain.jpg" />
+            <p>Mountains</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/town_city.jpg" />
+            <p>Town & City</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/adventure.jpg" />
+            <p>Adventures</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/wildlife.jpg" />
+            <p>Wildlife</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/historical.jpg" />
+            <p>Historical</p>
+          </div>
+          <div class="carousel-slide">
+            <img src="./assets/shopping.jpg" />
+            <p>Shopping</p>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="up">
+          <h2>Our <span>Services</span></h2>
+          <p>
+            With An Exclusive Portfolio Of Clients We Offer A Dedicated <br />
+            Services Based On First-Hand Knowledge Ensuring That All Trips
+            <br />
+            And Requests Are Handled With Precision And Care...
+          </p>
+        </div>
+        <div class="down">
+          <div class="left">
+            <div class="box">
+              <img src="./assets/adventure.jpg" />
+              <div class="overlay">
+                <h1>Adventure <span> Holidays</span></h1>
+                <p>
+                  Life is an adventure so your holidays should be too!, If you
+                  would like a guided trip outside of your comfort zone we will
+                  lead you in the right direction providing stories you'll be
+                  telling at the dinner table for years to come.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./assets/temple.jpg" />
+              <div class="overlay">
+                <h1>Cultural <span> Holidays</span></h1>
+                <p>
+                  Our extensive "little" black book allows us to promise
+                  consistent expert plannig as well as seamless execution. We
+                  select the best guides, the best times to visit and exclusive
+                  private access to cultural wonders worldwide.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./assets/wildlife.jpg" />
+              <div class="overlay">
+                <h1>Safari<span> Holidays</span></h1>
+                <p>
+                  Whether it's your first time and you have a big 5 bucket list
+                  or whether you are a safari aficiondo after an extensive
+                  expedtion to see more remote lands, we wil ensure all of your
+                  expectations are surpassed with flying colours!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="box">
+              <img src="./assets/honeymoon.jpg" />
+              <div class="overlay">
+                <h1>Honeymoon <span> Holidays</span></h1>
+                <p>
+                  From mini-moons to honeymoons sabbaticals we create the most
+                  memorable experiences for this once in a lifetime holiday!
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./assets/family.jpg" />
+              <div class="overlay">
+                <h1>Family <span> Holidays</span></h1>
+                <p>
+                  Family Holidays are about getting the balance right!, Any
+                  activity or adventure will be tailored to each member of the
+                  family from babies to great-grandparents, making sure everyone
+                  has the same wonderful experience. It's all in the detail.
+                </p>
+              </div>
+            </div>
+            <div class="box">
+              <img src="./assets/villa.webp" />
+              <div class="overlay">
+                <h1>Villa <span> Holidays</span></h1>
+                <p>
+                  Ideal for families or larger froups, the perfect private home
+                  can mean the perfect holiday. We work hard ti selected the
+                  fantastic homes, both large and small, where all facets have
+                  been considered.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="destination">
+        <div class="up">
+          <h1>Top <span>Destinations</span> For You</h1>
+          <p>
+            Much places suits your mood. Explore somewhere <br />
+            interesting and enjoy the vibes!
+          </p>
+        </div>
+        <div class="down">
+          <div class="container">
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-angkor wat.jpg" />
+                <h2>Angkor Wat</h2>
+                <h3>
+                  Angkor Wat is an architectural masterpiece and the largest
+                  religious monument in the world.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>Cambodia</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-the-maldives.jpg" />
+                <h2>The Maldives</h2>
+                <h3>
+                  an island country in the Indian Ocean, made up of a chain of
+                  about 1,200 coral islands and sandbanks.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>Republic of the Maldives</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-queenstown.jpg" />
+                <h2>Queenstown</h2>
+                <h3>
+                  World-renowned for its adventure, Queenstown is home to a huge
+                  choice of adrenaline activities.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>New Zealand</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-ranthambore.jpg" />
+                <h2>Ranthambore</h2>
+                <h3>
+                  a region in Rajasthan, India that includes the historic
+                  Ranthambore Fort and Ranthambore National Park.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>Rajasthan, India</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-bali-img.jpg" />
+                <h2>Bali</h2>
+                <h3>
+                  A small beautiful island and a part of Indonesia's
+                  archipelago, and the most famous of Indonesian tourism in the
+                  world.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>Indonesia</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+            <div class="card">
+              <div class="card-details">
+                <img src="./assets/dest-sahara.jpg" />
+                <h2>Sahara Desert</h2>
+                <h3>
+                  Sahara desert has a variety of land features, it's most famous
+                  for the sand dune fields, often depicted in movies.
+                </h3>
+                <p><i class="ri-map-pin-fill"></i>North Africa</p>
+              </div>
+              <a class="card-button" href="">Book Now!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="up">
+          <h1>OUR <span>SERVICES</span></h1>
+          <a class="btn" href="">See All</a>
+        </div>
+        <div class="down">
+          <div class="imgdiv">
+            <img src="./assets/car-rental.jpg" />
+          </div>
+          <div class="btn-cont">
+            <div class="hoverBtn">
+              <h1>
+                CAR<br />
+                RENTAL <i class="ri-arrow-right-up-line"></i>
+              </h1>
+              <p>Check out the offers we have selected for you.</p>
+            </div>
+            <div class="hoverBtn">
+              <h1>HOTEL<br />BOOKING <i class="ri-arrow-right-up-line"></i></h1>
+              <p>Quick and easy booking of hotels for comfortable stay.</p>
+            </div>
+            <div class="hoverBtn">
+              <h1>
+                PICK UP<br />& DROP <i class="ri-arrow-right-up-line"></i>
+              </h1>
+              <p>
+                We provide escort from the Airport and Railway Staions to the
+                hotel.
+              </p>
+            </div>
+            <div class="hoverBtn">
+              <h1>
+                FLIGHT &<br />TRAIN TICKETS
+                <i class="ri-arrow-right-up-line"></i>
+              </h1>
+              <p>
+                Quick and easy free bookings of tickets for hassle free journey.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="left">
+          <div class="top">
+            <div class="col">
+              <h2>HELLO, WANDERWAY</h2>
+              <a class="footer-btn" href="">About</a>
+              <a class="footer-btn" href="">FAQ</a>
+              <a class="footer-btn" href="">Contact Us</a>
+              <a class="footer-btn" href="">Careers</a>
+            </div>
+            <div class="col">
+              <h2>WANDERWAYS TO ESCAPE</h2>
+              <a class="footer-btn" href="">Refer a Friend and Save</a>
+              <a class="footer-btn" href="">Gift Cards</a>
+              <a class="footer-btn" href="">Responders</a>
+              <a class="footer-btn" href="">Students</a>
+            </div>
+            <div class="col">
+              <h2>WANDERWAYS'S WAY</h2>
+              <a class="footer-btn" href="">Our Journal</a>
+              <a class="footer-btn" href="">Our Podcast</a>
+              <a class="footer-btn" href="">Our Community</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="up">
+              <h1>
+                Ready To Explore? <br />
+                <span>Let's Go On Vacation, Make Your Day!</span>
+              </h1>
+              <input type="email" placeholder="Enter Your Email" />
+              <button class="footer-btn">Get Started!</button>
+            </div>
+            <div class="down">
+              <h1>FOLLOW US ON:</h1>
+              <p>
+                <i class="ri-instagram-line footer-btn"></i>
+                <i class="ri-facebook-circle-line footer-btn"></i>
+                <i class="ri-twitter-line footer-btn"></i>
+                <i class="ri-linkedin-box-line footer-btn"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./assets/footer-gif.gif" />
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
