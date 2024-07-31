@@ -269,11 +269,9 @@ body {
   scale: 0.98;
 }
 .wrapper main .overlay .image-anim {
+  position: relative;
   width: 100%;
   height: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 1vmax;
 }
 .wrapper main .overlay .image-anim img {
@@ -283,7 +281,14 @@ body {
      object-fit: contain;
 }
 .wrapper main .overlay .image-anim .car {
-  transform: translateX(-40%);
+  position: absolute;
+  top: 0;
+  left: -8vmax;
+}
+.wrapper main .overlay .image-anim .cabin {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .wrapper .category {
   width: 100%;

@@ -132,7 +132,21 @@ function menuToggle() {
 }
 menuToggle();
 
-
+function carMoveAnimation() {
+  gsap.to(".image-anim .car", {
+    scrollTrigger: {
+      trigger: ".overlay",
+      start: "bottom bottom",
+      end: "+=250%",
+      scroller: "body",
+      scrub: true,
+      // markers: true,
+      pin: "main",
+    },
+    left: "64%",
+  });
+}
+carMoveAnimation();
 
 function features() {
   const hb = document.querySelectorAll(".hoverBtn");
